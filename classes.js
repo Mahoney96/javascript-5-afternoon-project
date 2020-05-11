@@ -37,15 +37,17 @@ class Employee {
     this.last_name = last_name; 
     this.email = email;
     this.age = age;
-    
+  }
+  makeWidget(){
+    console.log(this.first_name, this.last_name, 'Widget');
   }
 }
 
-var EmployeeOne = new Employee('Camden');
-var EmployeeTwo = new Employee();
+var EmployeeOne = new Employee('Dallin', 'Anderson');
+var EmployeeTwo = new Employee('Camden');
 
-console.log(EmployeeOne);
-console.log(EmployeeTwo);
+EmployeeOne.makeWidget();
+
 
 ////////// PROBLEM 2 //////////
 
